@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jana Khaled</title>
+<style>
+  :root{
+    --ink:#1b1f23;
+    --paper:#eef0ec;
+    --line:#1b1f23;
+    --accent:#3b5f4a;
+    --muted:#5c6660;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      repeating-linear-gradient(0deg, rgba(27,31,35,0.05) 0 1px, transparent 1px 32px),
+      repeating-linear-gradient(90deg, rgba(27,31,35,0.05) 0 1px, transparent 1px 32px),
+      var(--paper);
+    color:var(--ink);
+    font-family: "Iowan Old Style", "Georgia", "Times New Roman", serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px;
+  }
+
+  .card{
+    width:100%;
+    max-width:560px;
+    border:1.5px solid var(--line);
+    padding:56px 48px;
+    position:relative;
+    background:var(--paper);
+  }
+
+  .card::before{
+    content:"";
+    position:absolute;
+    top:8px; left:8px; right:8px; bottom:8px;
+    border:1px solid rgba(27,31,35,0.35);
+    pointer-events:none;
+  }
+
+  .index{
+    font-family: "Courier New", monospace;
+    font-size:12px;
+    letter-spacing:0.08em;
+    color:var(--muted);
+    margin:0 0 28px 0;
+  }
+
+  h1{
+    margin:0;
+    font-size:clamp(2.2rem, 6vw, 3rem);
+    font-weight:400;
+    letter-spacing:-0.01em;
+    line-height:1.05;
+  }
+
+  .rule{
+    height:1px;
+    background:var(--line);
+    margin:22px 0;
+    width:64px;
+  }
+
+  h2{
+    margin:0 0 6px 0;
+    font-size:1.05rem;
+    font-weight:400;
+    font-style:italic;
+    color:var(--accent);
+  }
+
+  h3{
+    margin:0;
+    font-size:0.95rem;
+    font-weight:400;
+    color:var(--muted);
+  }
+
+  .coords{
+    margin-top:40px;
+    font-family:"Courier New", monospace;
+    font-size:11px;
+    color:var(--muted);
+    letter-spacing:0.03em;
+  }
+
+  @media (max-width:480px){
+    .card{ padding:40px 28px; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <p class="index">portfolio / 01</p>
+    <h1>Jana Khaled</h1>
+    <div class="rule"></div>
+    <h2>Faculty of Engineering</h2>
+    <h3>Alexandria</h3>
+    <p class="coords">31.2001&deg; N, 29.9187&deg; E</p>
+  </div>
+</body>
+</html>
