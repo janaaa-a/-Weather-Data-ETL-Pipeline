@@ -94,7 +94,7 @@ Connect to Azure SQL Server using PyODBC.
 Create a table with your name:
 
 ```text
-Mohamed_Hamed_WeatherData
+jana_WeatherData
 ```
 
 Load the transformed data into SQL Server using **PyODBC**.
